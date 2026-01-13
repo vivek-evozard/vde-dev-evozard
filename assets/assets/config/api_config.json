@@ -1,0 +1,53 @@
+{
+  "endpoints": {
+    "verifyAndAuthenticationUrl": {
+      "loginAuthentication": "https://ringplan.app.n8n.cloud/webhook/login/authenticate",
+      "verifyToken": "https://ringplan.app.n8n.cloud/webhook/login/verify-token"
+    },
+    "auth": {
+      "token": "https://ringplan.app.n8n.cloud/webhook/internal/kazoo/flutter/getAuthToken"
+    },
+    "baseUrl": {
+      "url": "https://ringplan.app.n8n.cloud/webhook/kazoo/flutter/api"
+    },
+    "uploadMedia": {
+      "url": "https://ringplan.app.n8n.cloud/webhook/kazoo/flutter/api/update-record-base64"
+    },
+    "callLog": {
+      "list": "https://ringplan.app.n8n.cloud/webhook/flutter/get-call-logs",
+      "detail": "https://ringplan.app.n8n.cloud/webhook/flutter/get-call-logs/details"
+    },
+    "webhookFixedUrl": {
+      "url": "https://ringplan.app.n8n.cloud/webhook/webhook-tracking/all"
+    },
+    "media": {
+      "dev": "https://api.ringplan.co:8443/v2",
+      "prod": "https://api.ringplan.app:8443/v2"
+    },
+    "external": {
+      "aiCallflow": "https://api.evozard.com/webhook/ai-callflow",
+      "deleteWorkflow": "https://api.ringplan.co:8443/v2/accounts",
+      "bubbleUpdate": "https://ringplan-v4.bubbleapps.io/version-test/api/1.1/wf/catch_number_flow"
+    },
+    "vdeWorkFlowServices": {
+      "workflowRead": "https://ringplan.app.n8n.cloud/webhook/call/flow/read/elastic",
+      "workflowUpdate": "https://ringplan.app.n8n.cloud/webhook/call/flow/update/elastic",
+      "templateUpdate": "https://ringplan.app.n8n.cloud/webhook/call/template/update/elastic",
+      "templateList": "https://ringplan.app.n8n.cloud/webhook/call/all_template_list/elastic",
+      "callFlowList": "https://ringplan.app.n8n.cloud/webhook/elastic/flutter/api/callflows",
+      "versionList": "https://ringplan.app.n8n.cloud/webhook/vde/elastic/callflows/versions/list"
+    }
+  },
+  "resources": {
+    "media": "accounts/{accountId}/media"
+  },
+  "templates": {
+    "getTemplateFile": "https://ringplan.app.n8n.cloud/webhook/call/template/read/elastic?template_name="
+  },
+  "environment": {
+    "name": "production",
+    "env": "prod",
+    "debug": false,
+    "logging": false
+  }
+}
